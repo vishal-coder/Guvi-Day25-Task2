@@ -11,11 +11,17 @@ let excuseDiv = document.querySelector(".excuseText");
 myform.addEventListener("submit", (e) => {
   e.preventDefault();
   let radios = document.querySelectorAll(".radio");
+  let checkedFlag = false;
   for (var radio of radios) {
     if (radio.checked) {
       // if checked then fetching data
       fetchData(radio.value);
+      checkedFlag = true;
     }
+  }
+
+  if (!checkedFlag) {
+    alert("Please select category of quote");
   }
 });
 
