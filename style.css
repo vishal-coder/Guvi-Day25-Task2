@@ -63,8 +63,7 @@
   justify-content: center;
 }
 
-.btn-primary {
-  margin-top: 10px;
+.btn-primary { 
   background-color: #081fb9 !important;
   flex-grow: 1;
   flex-basis: 50%;
